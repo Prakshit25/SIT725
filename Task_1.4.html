@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center; padding-top: 5%">Welcome to SIT725</h1>
+      <h2 style="text-align: center; padding-top: 20px">TASK 1.4P</h2>
+    </div>
+    <div style="padding-left: 48%; padding-top: 10%">
+      <button onclick="changecolor()">Change color</button>
+    </div>
+    <script>
+      function getRandomNumberBetween(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function changecolor() {
+        var colors = ["blue", "yellow", "green", "red"];
+        var num = getRandomNumberBetween(0, colors.length - 1);
+        document.body.style.backgroundColor = colors[num];
+      }
+    </script>
+  </body>
+</html>
